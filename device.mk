@@ -647,3 +647,8 @@ PRODUCT_PACKAGES += \
 
 PRODUCT_BOOT_JARS += \
     telephony-ext
+
+# VNDK
+PRODUCT_PACKAGES += \
+    com.android.vndk.current.on_vendor
+
