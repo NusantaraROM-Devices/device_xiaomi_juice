@@ -45,3 +45,7 @@ pm.sleep_mode=1
 # Disable Rescue Party
 persist.sys.disable_rescue=true
 persist.device_config.configuration.disable_rescue_party=true
+
+# Transcoding rates
+debug.media.transcoding.codec_max_operating_rate_720P=240
+debug.media.transcoding.codec_max_operating_rate_1080P=120
