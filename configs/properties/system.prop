@@ -43,6 +43,9 @@ persist.vendor.radio.calls.on.ims=1
 persist.vendor.radio.force_ltd_sys_ind=1
 persist.vendor.radio.voice_on_lte=1
 
+# Memory optimizations
+ro.vendor.qti.sys.fw.bservice_enable=true
+
 # Netflix custom property
 ro.netflix.bsp_rev=Q6115-31409-1
 
