@@ -45,6 +45,9 @@ ro.lmk.upgrade_pressure=100
 ro.lmk.downgrade_pressure=100
 ro.lmk.swap_free_low_percentage=20
 
+# Memory optimizations
+ro.vendor.qti.sys.fw.bservice_enable=true
+
 # Netflix custom property
 ro.netflix.bsp_rev=Q6115-31409-1
 
