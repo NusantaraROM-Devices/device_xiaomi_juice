@@ -104,6 +104,11 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/keylayout/uinput-focal.kl:$(TARGET_COPY_OUT_SYSTEM)/usr/keylayout/uinput-focal.kl \
     $(LOCAL_PATH)/keylayout/uinput-cdfinger.kl:$(TARGET_COPY_OUT_SYSTEM)/usr/keylayout/uinput-cdfinger.kl
 
+# Keymaster
+PRODUCT_PACKAGES += \
+    android.hardware.keymaster@4.1 \
+    android.hardware.keymaster@4.1.vendor
+
 # Lights
 PRODUCT_PACKAGES += \
     android.hardware.light@2.0-service.xiaomi_juice
@@ -123,9 +128,21 @@ PRODUCT_PACKAGES += \
 # Properties
 PRODUCT_COMPATIBLE_PROPERTY_OVERRIDE := true
 
+# Radio
+PRODUCT_PACKAGES += \
+    android.hardware.radio@1.5 \
+    android.hardware.radio@1.5.vendor \
+    android.hardware.radio.config@1.2 \
+    android.hardware.radio.config@1.2.vendor
+
 # Remove unwanted packages
 PRODUCT_PACKAGES += \
     RemovePackages
+
+# Secure element
+PRODUCT_PACKAGES += \
+    android.hardware.secure_element@1.2 \
+    android.hardware.secure_element@1.2.vendor
 
 # Sensors
 PRODUCT_PACKAGES += \
