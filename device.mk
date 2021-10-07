@@ -151,7 +151,9 @@ PRODUCT_PACKAGES += \
 # Sensors
 PRODUCT_PACKAGES += \
     libsensorndkbridge \
-    android.hardware.sensors@2.0-service.multihal
+    android.hardware.sensors@2.0-service.multihal \
+    android.frameworks.sensorservice@1.0 \
+    android.frameworks.sensorservice@1.0.vendor
 
 # Shipping API
 PRODUCT_SHIPPING_API_LEVEL := 29
