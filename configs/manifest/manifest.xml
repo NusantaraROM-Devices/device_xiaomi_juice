@@ -747,6 +747,7 @@
             <instance>default</instance>
         </interface>
         <fqname>@1.0::ISensors/default </fqname>
+        <fqname>@2.0::ISensors/default </fqname>
     </hal>
     <hal format="hidl">
         <name>vendor.qti.ims.factory</name>
