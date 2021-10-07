@@ -39,4 +39,7 @@
 
     <!-- Rounded corner content padding -->
     <dimen name="rounded_corner_content_padding">16.0dip</dimen>
+
+    <dimen name="physical_power_button_center_screen_location_y">1020px</dimen>
+    <dimen name="physical_fingerprint_sensor_center_screen_location_y">1020px</dimen>
 </resources>
