@@ -57,7 +57,12 @@ PRODUCT_PACKAGES += \
 
 # Bluetooth
 PRODUCT_PACKAGES += \
-    BluetoothQti
+    android.hardware.bluetooth.audio@2.0-impl \
+    audio.bluetooth.default \
+    BluetoothQti \
+    libbluetooth_qti \
+    vendor.qti.hardware.bluetooth_audio@2.0.vendor \
+    vendor.qti.hardware.btconfigstore@1.0.vendor
 
 # Camera
 PRODUCT_PACKAGES += \
@@ -86,6 +91,14 @@ PRODUCT_COPY_FILES += \
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/pixel_2016_exclusive.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/sysconfig/pixel_2016_exclusive.xml
 
+PRODUCT_PACKAGES += \
+    android.hardware.gnss@2.1 \
+    android.hardware.gnss@2.1.vendor \
+    android.hardware.gnss.measurement_corrections@1.1 \
+    android.hardware.gnss.measurement_corrections@1.1.vendor \
+    android.hardware.gnss.visibility_control@1.0 \
+    android.hardware.gnss.visibility_control@1.0.vendor
+
 # Health
 PRODUCT_PACKAGES += \
     android.hardware.health@2.1-impl \
@@ -104,9 +117,25 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/keylayout/uinput-focal.kl:$(TARGET_COPY_OUT_SYSTEM)/usr/keylayout/uinput-focal.kl \
     $(LOCAL_PATH)/keylayout/uinput-cdfinger.kl:$(TARGET_COPY_OUT_SYSTEM)/usr/keylayout/uinput-cdfinger.kl
 
+# Keymaster
+PRODUCT_PACKAGES += \
+    android.hardware.gatekeeper@1.0 \
+    android.hardware.gatekeeper@1.0.vendor \
+    android.hardware.keymaster@4.1 \
+    android.hardware.keymaster@4.1.vendor
+
 # Lights
 PRODUCT_PACKAGES += \
     android.hardware.light@2.0-service.xiaomi_juice
+
+# Netd
+PRODUCT_PACKAGES += \
+    android.system.net.netd@1.1.vendor
+
+# Neural Networks
+PRODUCT_PACKAGES += \
+    android.hardware.neuralnetworks@1.2 \
+    android.hardware.neuralnetworks@1.2.vendor
 
 # Overlays
 DEVICE_PACKAGE_OVERLAYS += \
@@ -123,6 +152,13 @@ PRODUCT_PACKAGES += \
 # Properties
 PRODUCT_COMPATIBLE_PROPERTY_OVERRIDE := true
 
+# Radio
+PRODUCT_PACKAGES += \
+    android.hardware.radio@1.5 \
+    android.hardware.radio@1.5.vendor \
+    android.hardware.radio.config@1.2 \
+    android.hardware.radio.config@1.2.vendor
+
 # Remove unwanted packages
 PRODUCT_PACKAGES += \
     RemovePackages
@@ -131,6 +167,11 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     libsensorndkbridge \
     android.hardware.sensors@2.0-service.multihal
+
+# Secure element
+PRODUCT_PACKAGES += \
+    android.hardware.secure_element@1.2 \
+    android.hardware.secure_element@1.2.vendor
 
 # Shipping API
 PRODUCT_SHIPPING_API_LEVEL := 29
