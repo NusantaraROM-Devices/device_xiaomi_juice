@@ -46,6 +46,9 @@ ro.lmk.swap_free_low_percentage=20
 # Netflix custom property
 ro.netflix.bsp_rev=Q6115-31409-1
 
+# System
+persist.sys.binary_xml=false
+
 # ZRAM
 ro.zram.mark_idle_delay_mins=60
 ro.zram.first_wb_delay_mins=1440
