@@ -140,6 +140,8 @@ PRODUCT_PACKAGES += \
     libldacBT_abr \
     libbt-vendor
 
+PRODUCT_PACKAGES += bt-mac-generator
+
 # Perf
 PRODUCT_PACKAGES += \
     vendor.qti.hardware.perf@2.2 \
