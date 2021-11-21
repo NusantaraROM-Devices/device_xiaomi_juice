@@ -1606,6 +1606,23 @@ vendor/lib64/vendor.xiaomi.hardware.mtdservice@1.0.so
 
 # rootdir
 vendor/bin/mlid
+vendor/bin/getwlansar.sh
+vendor/bin/init.mi.btmac.sh
+vendor/bin/init.crda.sh
+vendor/bin/init.mdm.sh
+vendor/bin/init.mi.usb.sh
+vendor/bin/init.qcom.class_core.sh
+vendor/bin/init.qcom.coex.sh
+vendor/bin/init.qcom.efs.sync.sh
+vendor/bin/init.qcom.sdio.sh
+vendor/bin/init.qcom.sensors.sh
+vendor/bin/init.qcom.usb.sh
+vendor/bin/init.qti.chg_policy.sh
+vendor/bin/init.qti.qcv.sh
+vendor/bin/qca6234-service.sh
+vendor/bin/setwlansarhigh.sh
+vendor/bin/setwlansarlow.sh
+vendor/etc/init/init.mi.btmac.rc
 vendor/etc/init/init.vendor.sensors.rc
 vendor/etc/init/vendor.sensors.sscrpcd.rc
 
