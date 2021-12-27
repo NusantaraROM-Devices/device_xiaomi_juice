@@ -24,16 +24,6 @@
         <fqname>@6.0::IEffectsFactory/default</fqname>
     </hal>
     <hal format="hidl">
-        <name>android.hardware.light</name>
-        <transport>hwbinder</transport>
-        <version>2.0</version>
-        <interface>
-            <name>ILight</name>
-            <instance>default</instance>
-        </interface>
-        <fqname>@2.0::ILight/default</fqname>
-    </hal>
-    <hal format="hidl">
         <name>android.hardware.bluetooth</name>
         <transport>hwbinder</transport>
         <version>1.0</version>
@@ -66,11 +56,6 @@
     <hal format="hidl">
         <name>android.hardware.configstore</name>
         <transport>hwbinder</transport>
-        <version>1.1</version>
-        <interface>
-            <name>ISurfaceFlingerConfigs</name>
-            <instance>default</instance>
-        </interface>
         <fqname>@1.1::ISurfaceFlingerConfigs/default</fqname>
     </hal>
     <hal format="hidl">
@@ -164,8 +149,6 @@
         <fqname>@1.2::ISap/slot2</fqname>
         <fqname>@1.4::IRadio/slot1</fqname>
         <fqname>@1.4::IRadio/slot2</fqname>
-        <fqname>@1.5::IRadio/slot1</fqname>
-        <fqname>@1.5::IRadio/slot2</fqname>
     </hal>
     <hal format="hidl">
         <name>android.hardware.radio.config</name>
@@ -208,24 +191,14 @@
         <fqname>@1.0::IOffloadControl/default</fqname>
     </hal>
     <hal format="hidl">
-        <name>com.fingerprints.extension</name>
+        <name>com.dsi.ant</name>
         <transport>hwbinder</transport>
         <version>1.0</version>
         <interface>
-            <name>IFingerprintEngineering</name>
+            <name>IAnt</name>
             <instance>default</instance>
         </interface>
-        <interface>
-            <name>IFingerprintNavigation</name>
-            <instance>default</instance>
-        </interface>
-        <interface>
-            <name>IFingerprintSensorTest</name>
-            <instance>default</instance>
-        </interface>
-        <fqname>@1.0::IFingerprintEngineering/default</fqname>
-        <fqname>@1.0::IFingerprintNavigation/default</fqname>
-        <fqname>@1.0::IFingerprintSensorTest/default</fqname>
+        <fqname>@1.0::IAnt/default</fqname>
     </hal>
     <hal format="hidl">
         <name>com.qualcomm.qti.dpm.api</name>
@@ -258,31 +231,6 @@
         <fqname>@2.2::IUceService/com.qualcomm.qti.uceservice</fqname>
     </hal>
     <hal format="hidl">
-        <name>vendor.focaltech.fingerprint</name>
-        <transport>hwbinder</transport>
-        <version>1.0</version>
-        <interface>
-            <name>IFocalFingerprintService</name>
-            <instance>default</instance>
-        </interface>
-        <fqname>@1.0::IFocalFingerprintService/default</fqname>
-    </hal>
-    <hal format="hidl">
-        <name>vendor.goodix.hardware.biometrics.fingerprint</name>
-        <transport>hwbinder</transport>
-        <version>2.1</version>
-        <interface>
-            <name>IGoodixFingerprintDaemon</name>
-            <instance>default</instance>
-        </interface>
-        <interface>
-            <name>IGoodixFingerprintDaemonExt</name>
-            <instance>default</instance>
-        </interface>
-        <fqname>@2.1::IGoodixFingerprintDaemon/default</fqname>
-        <fqname>@2.1::IGoodixFingerprintDaemonExt/default</fqname>
-    </hal>
-    <hal format="hidl">
         <name>vendor.qti.data.factory</name>
         <transport>hwbinder</transport>
         <version>2.1</version>
@@ -301,16 +249,6 @@
             <instance>default</instance>
         </interface>
         <fqname>@1.1::IEsePowerManager/default</fqname>
-    </hal>
-    <hal format="hidl">
-        <name>vendor.qti.hardware.servicetracker</name>
-        <transport>hwbinder</transport>
-        <version>1.2</version>
-        <interface>
-            <name>IServicetracker</name>
-            <instance>default</instance>
-        </interface>
-        <fqname>@1.2::IServicetracker/default</fqname>
     </hal>
     <hal format="hidl">
         <name>vendor.qti.hardware.alarm</name>
@@ -483,16 +421,6 @@
             <instance>default</instance>
         </interface>
         <fqname>@2.2::IPerf/default</fqname>
-    </hal>
-    <hal format="hidl">
-        <name>vendor.qti.hardware.qccsyshal</name>
-        <transport>hwbinder</transport>
-        <version>1.0</version>
-        <interface>
-            <name>IQccsyshal</name>
-            <instance>qccsyshal</instance>
-        </interface>
-        <fqname>@1.0::IQccsyshal/qccsyshal</fqname>
     </hal>
     <hal format="hidl">
         <name>vendor.qti.hardware.qccvndhal</name>
@@ -738,17 +666,6 @@
         <fqname>@1.0::IService/default</fqname>
     </hal>
     <hal format="hidl">
-        <name>android.hardware.sensors</name>
-        <transport>hwbinder</transport>
-        <version>1.0</version>
-        <interface>
-            <name>ISensors</name>
-            <instance>default</instance>
-        </interface>
-        <fqname>@1.0::ISensors/default </fqname>
-        <fqname>@2.0::ISensors/default </fqname>
-    </hal>
-    <hal format="hidl">
         <name>vendor.qti.ims.factory</name>
         <transport>hwbinder</transport>
         <version>1.0</version>
@@ -788,17 +705,4 @@
         </interface>
         <fqname>@1.0::IQspmhal/default</fqname>
     </hal>
-    <hal format="hidl">
-        <name>vendor.xiaomi.hardware.displayfeatureqservice</name>
-        <transport>hwbinder</transport>
-        <version>1.0</version>
-        <interface>
-            <name>IDisplayFeatureQservice</name>
-            <instance>default</instance>
-        </interface>
-        <fqname>@1.0::IDisplayFeatureQservice/default</fqname>
-    </hal>
-    <sepolicy>
-        <version>30.0</version>
-    </sepolicy>
 </manifest>
