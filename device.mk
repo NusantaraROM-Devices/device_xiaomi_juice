@@ -494,6 +494,10 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/seccomp/wfdvndservice.policy:$(TARGET_COPY_OUT_VENDOR)/etc/seccomp_policy/wfdvndservice.policy \
     $(LOCAL_PATH)/configs/seccomp/wifidisplayhalservice.policy:$(TARGET_COPY_OUT_VENDOR)/etc/seccomp_policy/wifidisplayhalservice.policy
 
+# Component overrides
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/configs/component-overrides.xml:$(TARGET_COPY_OUT_VENDOR)/etc/sysconfig/component-overrides.xml
+
 # Exclude sensor from InputManager
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/excluded-input-devices.xml:system/etc/excluded-input-devices.xml
