@@ -1,0 +1,22 @@
+[
+  {
+    "remote"       : "github",
+    "repository"   : "NusantaraROM-Devices/vendor_xiaomi_juice",
+    "target_path"  : "vendor/xiaomi/juice",
+    "branch"       : "11"
+  },
+  {
+    "remote"       : "github",
+    "repository"   : "javashin/Xiaomi-Fury-Bengal-SD662",
+    "target_path"  : "kernel/xiaomi/juice",
+    "clone-depth"  : "1",
+    "branch"       : "JuiceIcedSnow"
+  },
+  { 
+    "remote"       : "gitlab",
+    "repository"   : "aseelps/prebuilts_clang_host_linux-x86_clang-r445002",
+    "target_path"  : "prebuilts/clang/host/linux-x86/clang-r445002",
+    "clone-depth"  : "1",
+    "branch"       : "clang-r445002"
+  }
+]
