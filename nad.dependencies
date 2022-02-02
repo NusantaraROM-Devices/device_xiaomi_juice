@@ -1,0 +1,22 @@
+[
+  {
+    "remote"       : "github",
+    "repository"   : "NusantaraROM-Devices/vendor_xiaomi_juice",
+    "target_path"  : "vendor/xiaomi/juice",
+    "branch"       : "12"
+  },
+  {
+    "remote"       : "github",
+    "repository"   : "greenforce-project/kernel_xiaomi_citrus_sm6115",
+    "target_path"  : "kernel/xiaomi/juice",
+    "clone-depth"  : "1",
+    "branch"       : "rvc"
+  },
+  { 
+    "remote"       : "github",
+    "repository"   : "kdrag0n/proton-clang",
+    "target_path"  : "prebuilts/clang/host/linux-x86/clang-proton",
+    "clone-depth"  : "1",
+    "branch"       : "master"
+  }
+]
