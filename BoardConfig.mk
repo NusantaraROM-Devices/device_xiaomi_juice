@@ -6,7 +6,6 @@
 
 DEVICE_PATH := device/xiaomi/juice
 
-# Broken R
 BUILD_BROKEN_DUP_RULES := true
 
 # Architecture
@@ -37,7 +36,7 @@ TARGET_OTA_ASSERT_DEVICE := lime,citrus,lemon,pomelo,juice
 AUDIO_FEATURE_ENABLED_HDMI_SPK := true
 
 # Bluetooth
-BOARD_BLUETOOTH_BDROID_BUILDCFG_INCLUDE_DIR := $(DEVICE_PATH)/bluetooth/include
+BOARD_BLUETOOTH_BDROID_BUILDCFG_INCLUDE_DIR := $(DEVICE_PATH)/configs/bluetooth/include
 TARGET_FWK_SUPPORTS_FULL_VALUEADDS := true
 TARGET_USE_QTI_BT_STACK := true
 
@@ -52,18 +51,15 @@ TARGET_USES_QTI_CAMERA_DEVICE := true
 TARGET_USES_HWC2 := true
 TARGET_USES_ION := true
 
+# DRM
+TARGET_ENABLE_MEDIADRM_64 := true
+
 # Enable real time lockscreen charging current values
 BOARD_GLOBAL_CFLAGS += -DBATTERY_REAL_INFO
 HEALTHD_USE_BATTERY_INFO := true
 
-# HWUI
-HWUI_COMPILE_FOR_PERF := true
-
-# DRM
-TARGET_ENABLE_MEDIADRM_64 := true
-
 # Filesystem
-TARGET_FS_CONFIG_GEN := $(DEVICE_PATH)/config.fs
+TARGET_FS_CONFIG_GEN := $(DEVICE_PATH)/configs/config.fs
 
 # HWUI
 HWUI_COMPILE_FOR_PERF := true
@@ -107,7 +103,7 @@ BOARD_MKBOOTIMG_ARGS := --ramdisk_offset $(BOARD_RAMDISK_OFFSET)
 BOARD_MKBOOTIMG_ARGS += --header_version $(BOARD_BOOTIMG_HEADER_VERSION)
 BOARD_MKBOOTIMG_ARGS += --dtb $(TARGET_PREBUILT_DTB)
 
-#clang
+# Kernel Toolchain
 TARGET_KERNEL_CLANG_COMPILE := true
 TARGET_KERNEL_CLANG_VERSION := proton
 KERNEL_TOOLCHAIN_PATH := $(shell pwd)/prebuilts/clang/host/linux-x86/clang-proton/bin/aarch64-linux-gnu-
@@ -116,7 +112,7 @@ TARGET_KERNEL_ADDITIONAL_FLAGS += LLVM=1
 # Metadata
 BOARD_USES_METADATA_PARTITION := true
 
-#Partitions
+# Partitions
 BOARD_FLASH_BLOCK_SIZE := 262144
 BOARD_BOOTIMAGE_PARTITION_SIZE := 134217728
 BOARD_RECOVERYIMAGE_PARTITION_SIZE := 134217728
@@ -159,20 +155,17 @@ TARGET_COPY_OUT_PRODUCT := product
 
 BUILD_WITHOUT_VENDOR := true
 
+# Platform
+TARGET_BOARD_PLATFORM_GPU := qcom-adreno610
+
 # Power
 TARGET_USES_INTERACTION_BOOST := true
 TARGET_POWERHAL_MODE_EXT := $(DEVICE_PATH)/power/power-mode.cpp
 TARGET_TAP_TO_WAKE_NODE := "/sys/touchpanel/double_tap"
 
-# SurfaceFlinger
-TARGET_USE_AOSP_SURFACEFLINGER := true
-
-# Platform
-TARGET_BOARD_PLATFORM_GPU := qcom-adreno610
-
 # Properties
-TARGET_PRODUCT_PROP += $(DEVICE_PATH)/product.prop
-TARGET_SYSTEM_PROP += $(DEVICE_PATH)/system.prop
+TARGET_PRODUCT_PROP += $(DEVICE_PATH)/configs/properties/product.prop
+TARGET_SYSTEM_PROP += $(DEVICE_PATH)/configs/properties/system.prop
 
 # Recovery
 TARGET_RECOVERY_FSTAB := $(DEVICE_PATH)/rootdir/etc/fstab.default
@@ -185,6 +178,9 @@ TARGET_PROVIDES_QTI_TELEPHONY_JAR := true
 # Sepolicy
 include device/qcom/sepolicy/SEPolicy.mk
 BOARD_PLAT_PRIVATE_SEPOLICY_DIR += $(DEVICE_PATH)/sepolicy/private
+
+# SurfaceFlinger
+TARGET_USE_AOSP_SURFACEFLINGER := true
 
 # Treble
 BOARD_VNDK_VERSION := current
