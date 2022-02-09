@@ -1,32 +1,36 @@
 # Blur
 persist.sys.sf.disable_blurs=1
-ro.surface_flinger.supports_background_blur=0
 ro.sf.blurs_are_expensive=0
+ro.surface_flinger.supports_background_blur=0
 
 # Dex2oat
 dalvik.vm.dex2oat64.enabled=true
+
+# Disable Rescue Party
+persist.device_config.configuration.disable_rescue_party=true
+persist.sys.disable_rescue=true
 
 # DRM
 drm.service.enabled=true
 
 # Graphics
+debug.egl.hw=1
+debug.enable.sglscale=1
 debug.hwui.renderer=skiagl
-debug.sf.hw=1
-debug.sf.latch_unsignaled=1
+debug.mdpcomp.logs=0
+debug.sdm.support_writeback=0
 debug.sf.disable_backpressure=1
 debug.sf.disable_hwc_overlays=1
-debug.sdm.support_writeback=0
-debug.enable.sglscale=1
-debug.egl.hw=1
-debug.mdpcomp.logs=0
-persist.sys.scrollingcache=1
+debug.sf.hw=1
+debug.sf.latch_unsignaled=1
 debug.sf.recomputecrop=0
-vendor.display.disable_rotator_downscale=1
-ro.surface_flinger.use_color_management=true
-ro.surface_flinger.use_context_priority=true
-ro.surface_flinger.has_wide_color_display=false
+persist.sys.scrollingcache=1
 ro.hardware.egl=adreno
 ro.hardware.vulkan=adreno
+ro.surface_flinger.has_wide_color_display=false
+ro.surface_flinger.use_color_management=true
+ro.surface_flinger.use_context_priority=true
+vendor.display.disable_rotator_downscale=1
 
 # IORap
 persist.device_config.runtime_native_boot.iorap_readahead_enable=true
@@ -36,12 +40,8 @@ ro.config.media_vol_steps=15
 vendor.audio.offload.buffer.size.kb=256
 
 # Power-saving props
+ro.ril.disable.power.collapse=0
 ro.vendor.use_data_netmgrd=true
 ro.vold.umsdirtyratio=20
-ro.ril.disable.power.collapse=0
-power.saving.mode=1
 pm.sleep_mode=1
-
-# Disable Rescue Party
-persist.sys.disable_rescue=true
-persist.device_config.configuration.disable_rescue_party=true
+power.saving.mode=1
