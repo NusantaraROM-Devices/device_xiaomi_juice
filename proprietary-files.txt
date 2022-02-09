@@ -35,6 +35,8 @@ vendor/lib/rfsa/adsp/misound_res_headphone.bin
 vendor/lib/rfsa/adsp/libscveT2T_skel.so
 
 # ANT
+system_ext/lib/com.qualcomm.qti.ant@1.0.so
+system_ext/lib64/com.qualcomm.qti.ant@1.0.so
 vendor/lib/com.dsi.ant@1.0.so
 vendor/lib64/com.dsi.ant@1.0.so
 
@@ -116,8 +118,11 @@ vendor/bin/hw/android.hardware.bluetooth@1.0-service-qti
 vendor/etc/init/android.hardware.bluetooth@1.0-service-qti.rc
 vendor/lib/hw/android.hardware.bluetooth@1.0-impl-qti.so
 vendor/lib64/hw/android.hardware.bluetooth@1.0-impl-qti.so
+vendor/lib64/android.hardware.bluetooth@1.0.so
 vendor/lib/libbtnv.so
+vendor/lib/libbt-hidlclient.so
 vendor/lib64/libbtnv.so
+vendor/lib64/libbt-hidlclient.so
 
 # Bluetooth (A2DP)
 vendor/lib/hw/android.hardware.bluetooth.audio@2.0-impl.so
@@ -135,6 +140,8 @@ vendor/lib64/vendor.qti.hardware.bluetooth_sar@1.0.so
 vendor/lib64/vendor.qti.hardware.bluetooth_sar@1.1.so
 
 # Bluetooth (Configstore)
+vendor/lib/hw/vendor.qti.hardware.btconfigstore@1.0-impl.so
+vendor/lib/hw/vendor.qti.hardware.btconfigstore@2.0-impl.so
 vendor/lib64/hw/vendor.qti.hardware.btconfigstore@1.0-impl.so
 vendor/lib64/hw/vendor.qti.hardware.btconfigstore@2.0-impl.so
 
@@ -719,6 +726,19 @@ vendor/lib64/hw/vendor.qti.esepowermanager@1.1-impl.so
 vendor/lib64/vendor.qti.esepowermanager@1.0.so
 vendor/lib64/vendor.qti.esepowermanager@1.1.so
 
+
+# FM
+system_ext/lib/fm_helium.so
+system_ext/lib/libfm-hci.so
+system_ext/lib/vendor.qti.hardware.fm@1.0.so
+system_ext/lib64/fm_helium.so
+system_ext/lib64/libfm-hci.so
+system_ext/lib64/vendor.qti.hardware.fm@1.0.so
+vendor/lib/hw/vendor.qti.hardware.fm@1.0-impl.so
+vendor/lib/vendor.qti.hardware.fm@1.0.so
+vendor/lib64/hw/vendor.qti.hardware.fm@1.0-impl.so
+vendor/lib64/vendor.qti.hardware.fm@1.0.so
+
 # Fingerprint
 vendor/bin/hw/android.hardware.biometrics.fingerprint@2.1-service
 vendor/etc/init/android.hardware.biometrics.fingerprint@2.1-service.rc
@@ -734,21 +754,6 @@ vendor/lib64/libvendor.goodix.hardware.biometrics.fingerprint@2.1.so
 vendor/lib64/vendor.qti.hardware.fingerprint@1.0.so
 vendor/lib64/libgf_ca.so
 vendor/lib64/libgf_hal.so
-
-# FM
-system_ext/lib/fm_helium.so
-system_ext/lib/libfm-hci.so
-system_ext/lib/vendor.qti.hardware.fm@1.0.so
-system_ext/lib64/fm_helium.so
-system_ext/lib64/libfm-hci.so
-system_ext/lib64/vendor.qti.hardware.fm@1.0.so
-vendor/bin/fm_qsoc_patches
-vendor/lib/ftm_fm_lib.so
-vendor/lib/hw/vendor.qti.hardware.fm@1.0-impl.so
-vendor/lib/vendor.qti.hardware.fm@1.0.so
-vendor/lib64/ftm_fm_lib.so
-vendor/lib64/hw/vendor.qti.hardware.fm@1.0-impl.so
-vendor/lib64/vendor.qti.hardware.fm@1.0.so
 
 # Gatekeeper
 vendor/bin/hw/android.hardware.gatekeeper@1.0-service-qti
@@ -1628,6 +1633,7 @@ vendor/etc/init/vendor.sensors.sscrpcd.rc
 
 # Misc
 -system_ext/app/WAPPushManager/WAPPushManager.apk
+system_ext/bin/dun-server
 system_ext/etc/compatconfig/settings-platform-compat-config.xml
 system_ext/etc/permissions/telephony_system-ext_privapp-permissions-qti.xml
 system_ext/etc/permissions/wfd-system-ext-privapp-permissions-qti.xml

@@ -18,6 +18,8 @@ persist.bluetooth.bqr.min_interval_ms=500
 persist.vendor.bt.a2dp.mac_whitelist=false
 persist.vendor.btsatck.absvolfeature=true
 persist.vendor.btstack.connect.peer_earbud=true
+ro.bluetooth.library_name=libbluetooth_qti.so
+vendor.bluetooth.soc=cherokee
 
 # IMS
 persist.dbg.volte_avail_ovr=1
