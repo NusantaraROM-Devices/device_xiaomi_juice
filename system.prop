@@ -17,7 +17,8 @@ persist.bluetooth.bqr.event_mask=14
 persist.bluetooth.bqr.min_interval_ms=500
 persist.vendor.bt.a2dp.mac_whitelist=false
 persist.vendor.btsatck.absvolfeature=true
-persist.vendor.btstack.connect.peer_earbud=true
+persist.vendor.btstack.connect.peer_earbud=t
+persist.bluetooth.bluetooth_audio_hal.disabled=false
 
 # IMS
 persist.dbg.volte_avail_ovr=1
