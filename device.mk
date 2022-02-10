@@ -87,6 +87,7 @@ PRODUCT_PACKAGES += \
 
 # Init
 PRODUCT_PACKAGES += \
+    init.juice.rc \
     init.mi_thermald.rc
 
 # Input
