@@ -87,8 +87,7 @@ PRODUCT_PACKAGES += \
 
 # Init
 PRODUCT_PACKAGES += \
-    init.mi_thermald.rc \
-    init.target.rc
+    init.mi_thermald.rc
 
 # Input
 PRODUCT_COPY_FILES += \
