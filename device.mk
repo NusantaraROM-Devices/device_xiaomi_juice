@@ -67,11 +67,6 @@ PRODUCT_PACKAGES += \
     android.hardware.audio@6.0-impl \
 
 PRODUCT_PACKAGES += \
-    vendor.qti.hardware.audiohalext@1.0 \
-    vendor.qti.hardware.audiohalext@1.0.vendor\
-    vendor.qti.hardware.audiohalext-utils
-
-PRODUCT_PACKAGES += \
     audio.a2dp.bengal \
     audio.a2dp.default \
     audio.primary.bengal \
