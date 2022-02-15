@@ -214,14 +214,15 @@ vendor/lib64/vendor.qti.hardware.data.dynamicdds@1.0.so
 vendor/lib64/vendor.qti.hardware.data.iwlan@1.0.so
 vendor/lib64/vendor.qti.hardware.data.qmi@1.0.so
 
-# Camera
-system_ext/lib/vendor.qti.hardware.camera.device@1.0.so
-vendor/bin/hw/android.hardware.camera.provider@2.4-service_64
+# Camera-hardware
+vendor/lib/vendor.qti.hardware.camera.postproc@1.0-service-impl.so
+vendor/lib/android.hardware.camera.provider@2.4-legacy.so
+vendor/lib64/vendor.qti.hardware.camera.postproc@1.0-service-impl.so
+vendor/lib64/android.hardware.camera.provider@2.4-legacy.so
+
+# Camera-sensor
 vendor/etc/camera/mibokeh_712_opencl.bin
 vendor/etc/camera/mibokeh_712_parameter.bin
-vendor/etc/init/android.hardware.camera.provider@2.4-service_64.rc
-vendor/lib/android.hardware.camera.provider@2.4-external.so
-vendor/lib/android.hardware.camera.provider@2.4-legacy.so
 vendor/lib/camera/com.qti.eeprom.lime_ofilm_ov8856_front_eeprom.so
 vendor/lib/camera/com.qti.eeprom.lime_sunny_ov8856_front_eeprom.so
 vendor/lib/camera/com.qti.sensor.lime_aacaf_hi259_macro.so
@@ -354,11 +355,6 @@ vendor/lib/libswregistrationalgo.so
 vendor/lib/libswvdec.so
 vendor/lib/libvideoutils.so
 vendor/lib/libvidhance.so
-vendor/lib/vendor.qti.hardware.camera.device@1.0.so
-vendor/lib/vendor.qti.hardware.camera.postproc@1.0-service-impl.so
-vendor/lib/vendor.qti.hardware.camera.postproc@1.0.so
-vendor/lib64/android.hardware.camera.provider@2.4-external.so
-vendor/lib64/android.hardware.camera.provider@2.4-legacy.so
 vendor/lib64/camera/com.qti.eeprom.lime_ofilm_ov8856_front_eeprom.so
 vendor/lib64/camera/com.qti.eeprom.lime_sunny_ov8856_front_eeprom.so
 vendor/lib64/camera/com.qti.sensor.lime_aacaf_hi259_macro.so
@@ -493,9 +489,6 @@ vendor/lib64/libswregistrationalgo.so
 vendor/lib64/libswvdec.so
 vendor/lib64/libvidhance.so
 vendor/lib64/lib_lowlight.so
-vendor/lib64/vendor.qti.hardware.camera.device@1.0.so
-vendor/lib64/vendor.qti.hardware.camera.postproc@1.0-service-impl.so
-vendor/lib64/vendor.qti.hardware.camera.postproc@1.0.so
 
 # Camera-arcsoft
 vendor/lib/libarcsoft_beautyshot.so
