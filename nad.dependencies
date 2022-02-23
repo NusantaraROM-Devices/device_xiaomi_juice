@@ -1,0 +1,20 @@
+[
+   {
+   "remote"       : "gitlab",
+   "repository"   : "I-n-o-k/vendor_xiaomi_juice",
+   "target_path"  : "vendor/xiaomi/juice",
+   "branch"       : "12"
+   },
+   {
+   "remote"       : "github",
+   "repository"   : "I-n-o-k/android_kernel_xiaomi_bengal",
+   "target_path"  : "kernel/xiaomi/juice",
+   "branch"       : "12"
+   },
+   {
+   "remote"       : "github",
+   "repository"   : "kdrag0n/proton-clang",
+   "target_path"  : "prebuilts/clang/host/linux-x86/clang-proton",
+   "branch"       : "master"
+   }
+]
