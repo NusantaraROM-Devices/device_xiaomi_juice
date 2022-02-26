@@ -30,6 +30,7 @@ persist.device_config.runtime_native_boot.iorap_readahead_enable=true
 # Media
 ro.config.media_vol_steps=15
 vendor.audio.offload.buffer.size.kb=256
+vendor.audio_hal.period_size=240
 
 # Always use GPU for screen compositing
 debug.sf.disable_hwc_overlays=1
