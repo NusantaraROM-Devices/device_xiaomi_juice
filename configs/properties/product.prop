@@ -32,6 +32,14 @@ ro.surface_flinger.use_color_management=true
 ro.surface_flinger.use_context_priority=true
 vendor.display.disable_rotator_downscale=1
 
+# SF Offset
+debug.sf.late.sf.duration=10500000
+debug.sf.late.app.duration=20500000
+debug.sf.early.sf.duration=21000000
+debug.sf.early.app.duration=16500000
+debug.sf.earlyGl.sf.duration=13500000
+debug.sf.earlyGl.app.duration=21000000
+
 # IORap
 persist.device_config.runtime_native_boot.iorap_readahead_enable=true
 
