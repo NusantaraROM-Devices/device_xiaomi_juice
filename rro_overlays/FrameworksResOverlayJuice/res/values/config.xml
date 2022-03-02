@@ -1066,5 +1066,8 @@
 
     <!-- Screen off delay -->
     <integer name="config_screen_off_delay">0</integer>
+
+    <!-- Exempt cne from privacy (location) indicators -->
+    <string name="config_systemTelephonyPackage" translatable="false">com.qualcomm.qti.cne</string>
 </resources>
 
