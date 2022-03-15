@@ -145,18 +145,18 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/nfc/libnfc-hal-st.conf:$(TARGET_COPY_OUT_PRODUCT)/vendor_overlay/$(PRODUCT_TARGET_VNDK_VERSION)/etc/libnfc-hal-st.conf
 
 # Overlays
-DEVICE_PACKAGE_OVERLAYS += \
-    $(LOCAL_PATH)/overlay \
-    $(LOCAL_PATH)/overlay-nad
-
 PRODUCT_PACKAGES += \
     AospFrameworkResOverlay \
     AospWifiResOverlay \
     CarrierConfigResCommon \
     CellBroadcastReceiverResCommon \
+    DialerOverlayJuice \
     FrameworksResCommon \
+    FrameworksResOverlayJuice \
     FrameworksResTarget \
     NotchBarKiller \
+    SettingsOverlayJuice \
+    SystemUIOverlayJuice \
     SystemUIResCommon \
     TelecommResCommon \
     TelephonyResCommon \
