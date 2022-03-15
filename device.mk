@@ -147,21 +147,18 @@ PRODUCT_COPY_FILES += \
 
 # Overlays
 PRODUCT_PACKAGES += \
-    AospFrameworkResOverlay \
-    AospWifiResOverlay \
-    CarrierConfigResCommon \
-    CellBroadcastReceiverResCommon \
-    DialerOverlayJuice \
-    FrameworksResCommon \
-    FrameworksResOverlayJuice \
-    FrameworksResTarget \
-    NotchBarKiller \
-    SettingsOverlayJuice \
-    SystemUIOverlayJuice \
-    SystemUIResCommon \
-    TelecommResCommon \
-    TelephonyResCommon \
-    WifiResCommon
+   CarrierConfigOverlayJuice \
+   CellBroadcastReceiverOverlayJuice \
+   DialerOverlayJuice \
+   FrameworksResOverlayJuice \
+   NotchBarKillerOverlayJuice \
+   SettingsOverlayJuice \
+   SettingsProviderOverlayJuice \
+   SystemUIOverlayJuice \
+   TelecommOverlayJuice \
+   TelephonyOverlayJuice \
+   TetheringConfigOverlayJuice \
+   WifiOverlayJuice
 
 # Partition
 PRODUCT_BUILD_SUPER_PARTITION := false
