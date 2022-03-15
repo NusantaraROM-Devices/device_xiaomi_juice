@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="config_wifi_tcp_buffers">
+        <item>524288</item>
+        <item>1048576</item>
+        <item>8808040</item>
+        <item>262144</item>
+        <item>524288</item>
+        <item>6710886</item>
+    </string-array>
+    <integer-array name="config_wifiDisconnectedScanIntervalScheduleSec">
+        <item>20</item>
+    </integer-array>
+</resources>
