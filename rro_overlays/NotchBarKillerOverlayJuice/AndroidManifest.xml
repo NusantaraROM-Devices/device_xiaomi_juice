@@ -21,6 +21,8 @@
     <overlay android:targetPackage="android"
             android:category="com.android.internal.display_cutout_emulation"
             android:priority="850"/>
-
+    <uses-sdk
+        android:minSdkVersion="29"
+        android:targetSdkVersion="31" />
     <application android:label="@string/display_cutout_emulation_overlay" android:hasCode="false"/>
 </manifest>
