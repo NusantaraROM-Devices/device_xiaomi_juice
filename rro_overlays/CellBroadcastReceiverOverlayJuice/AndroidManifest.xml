@@ -12,7 +12,7 @@
 -->
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.android.cellbroadcastreceiver.overlay.juice">
-    <application android:hasCode="false" />
+    <application android:label="CellBroadcastReceiverOverlayJuice" android:hasCode="false" />
     <overlay
       android:targetPackage="com.android.carrierconfig"
       android:isStatic="true"
